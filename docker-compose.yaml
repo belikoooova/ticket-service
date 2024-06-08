@@ -1,0 +1,19 @@
+---
+services:
+  authorization-db:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=authorization-db
+      - POSTGRES_USER=authorization
+      - POSTGRES_PASSWORD=authorization
+
+  order-db:
+    image: postgres
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_DB=order-db
+      - POSTGRES_USER=order
+      - POSTGRES_PASSWORD=order

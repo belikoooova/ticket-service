@@ -14,22 +14,6 @@
           </set>
         </option>
       </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/authorization-app" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/authorization-app" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/order-app" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/order-app" />
-          </set>
-        </option>
-      </GradleProjectSettings>
     </option>
   </component>
 </project>
