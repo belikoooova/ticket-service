@@ -1,0 +1,21 @@
+---
+spring:
+  application.name: order-app
+  datasource:
+    url: jdbc:postgresql://localhost:5433/order-db
+    username: order
+    password: order
+  jpa:
+    hibernate.ddl-auto: update
+    properties.hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      format_sql: true
+
+app:
+  auth:
+    client:
+      timeout: PT5S
+      base-url: http://localhost:8080
+
+server:
+  port: 8091
