@@ -1,4 +1,4 @@
-package com.example.authorizationapp.dto;
+package com.example.orderapp.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,8 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserResponse {
-    private int id;
-    private String password;
-    private String email;
+public class CreateOrderRequest {
+    private int fromStationId;
+    private int toStationId;
 }

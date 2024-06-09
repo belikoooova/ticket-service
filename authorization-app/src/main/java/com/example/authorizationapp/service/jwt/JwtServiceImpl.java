@@ -11,6 +11,7 @@ import io.jsonwebtoken.security.Keys;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.security.Key;
 import java.time.LocalDateTime;
@@ -55,7 +56,8 @@ public class JwtServiceImpl implements JwtService {
         return (userName.equals(userDetails.getUsername())) && !isTokenExpired(token);
     }
 
-    private boolean isTokenExpired(String token) {
+    @Transactional
+    public boolean isTokenExpired(String token) {
         Session session = sessionDao.findByToken(token);
         return session.getExpires().isBefore(LocalDateTime.now());
     }

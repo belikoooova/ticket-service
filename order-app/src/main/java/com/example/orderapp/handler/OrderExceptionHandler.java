@@ -1,6 +1,6 @@
-package com.example.authorizationapp.handler;
+package com.example.orderapp.handler;
 
-import com.example.authorizationapp.exception.AuthorizationException;
+import com.example.orderapp.exception.OrderException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.AuthenticationException;
@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @RestControllerAdvice
-public class AuthorizationExceptionHandler {
+public class OrderExceptionHandler {
     private static final String LOGIN_INCORRECT_DATA = "Неверный логин и/или пароль";
     private static final String EMAIL_NOT_EXIST = "Пользователя с почтой %s не существует";
     private static final String UNKNOWN_ERROR = "Неизвестная ошибка";
 
-    @ExceptionHandler(AuthorizationException.class)
-    public ResponseEntity<String> handleAuthorizationException(AuthorizationException e) {
+    @ExceptionHandler(OrderException.class)
+    public ResponseEntity<String> handleOrderException(OrderException e) {
         return ResponseEntity
                 .status(e.getStatus())
                 .body(e.getDefaultMessage());
