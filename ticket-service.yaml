@@ -1,0 +1,207 @@
+_type: export
+__export_format: 4
+__export_date: 2024-06-09T23:11:27.443Z
+__export_source: insomnia.desktop.app:v9.2.0
+resources:
+  - _id: req_1882833199c24524b01412f69ca8b9f2
+    parentId: wrk_c28b06c8f4e24439ab191cde5aea2e95
+    modified: 1717973122026
+    created: 1717963976494
+    url: http://localhost:8091/orders/9
+    name: orders/{id}
+    description: ""
+    method: GET
+    body: {}
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.2.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MTAsImVtYWlsIjoiYUBiLmNkIiwic3ViIjoiYUBiLmNkIiwiaWF0IjoxNzE3OTcyOTY2LCJleHAiOjE3MjU5MjE3NjZ9.1jBYD_Nk5X8Gko3IXzBJFSITEX6H5vXWeoN-j7x9c-8
+      prefix: Bearer
+    metaSortKey: -1717963976494
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_c28b06c8f4e24439ab191cde5aea2e95
+    parentId: null
+    modified: 1717931774368
+    created: 1717931774368
+    name: ticket-service
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_a9cfc9168082485aaeea5e3d247845ec
+    parentId: wrk_c28b06c8f4e24439ab191cde5aea2e95
+    modified: 1717973088172
+    created: 1717962708981
+    url: http://localhost:8091/orders
+    name: orders
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"fromStationId": 3,
+        	"toStationId": 2
+        }
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.2.0
+    authentication:
+      type: bearer
+      prefix: Bearer
+      token: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MTAsImVtYWlsIjoiYUBiLmNkIiwic3ViIjoiYUBiLmNkIiwiaWF0IjoxNzE3OTcyOTY2LCJleHAiOjE3MjU5MjE3NjZ9.1jBYD_Nk5X8Gko3IXzBJFSITEX6H5vXWeoN-j7x9c-8
+    metaSortKey: -1717962708981
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d9d544a9397e40f3813c2f7cf689d38d
+    parentId: wrk_c28b06c8f4e24439ab191cde5aea2e95
+    modified: 1717973040198
+    created: 1717937000288
+    url: http://localhost:8080/users/me
+    name: users/me
+    description: ""
+    method: GET
+    body: {}
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.2.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MTAsImVtYWlsIjoiYUBiLmNkIiwic3ViIjoiYUBiLmNkIiwiaWF0IjoxNzE3OTcyOTY2LCJleHAiOjE3MjU5MjE3NjZ9.1jBYD_Nk5X8Gko3IXzBJFSITEX6H5vXWeoN-j7x9c-8
+      prefix: Bearer
+    metaSortKey: -1717937000288
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b229e5b9da884cb481b489963789fdf9
+    parentId: wrk_c28b06c8f4e24439ab191cde5aea2e95
+    modified: 1717972963745
+    created: 1717931782520
+    url: http://localhost:8080/auth/sign-in
+    name: auth/sign-in
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "a@b.cd",
+        	"password": "11111!Aoa"
+        }
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.2.0
+    authentication:
+      type: bearer
+      disabled: true
+      token: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6OCwiZW1haWwiOiJ0ZXN0QGVtYWlsLmNvbSIsInN1YiI6InRlc3RAZW1haWwuY29tIiwiaWF0IjoxNzE3OTM2Mjg4LCJleHAiOjE3MjU4ODUwODh9.2Cl61TeGSYSMllU3XILJq85pHe3C-YIUm7SiGt0GU6M
+      prefix: Bearer
+    metaSortKey: -1717931782520
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_336e5cf5457948238593e65fbce6c2d2
+    parentId: wrk_c28b06c8f4e24439ab191cde5aea2e95
+    modified: 1717972922531
+    created: 1717970123929
+    url: http://localhost:8080/auth/sign-up
+    name: auth/sign-up
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "a@b.cd",
+        	"nickname": "test",
+        	"password": "11111!Aoa"
+        }
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.2.0
+    authentication:
+      type: bearer
+      disabled: true
+      token: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6OCwiZW1haWwiOiJ0ZXN0QGVtYWlsLmNvbSIsInN1YiI6InRlc3RAZW1haWwuY29tIiwiaWF0IjoxNzE3OTM2Mjg4LCJleHAiOjE3MjU4ODUwODh9.2Cl61TeGSYSMllU3XILJq85pHe3C-YIUm7SiGt0GU6M
+      prefix: Bearer
+    metaSortKey: -1717931782470
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_d2ae58150c96447f441e165720ca0354b9a27229
+    parentId: wrk_c28b06c8f4e24439ab191cde5aea2e95
+    modified: 1717931774374
+    created: 1717931774374
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1717931774374
+    _type: environment
+  - _id: jar_d2ae58150c96447f441e165720ca0354b9a27229
+    parentId: wrk_c28b06c8f4e24439ab191cde5aea2e95
+    modified: 1717962835313
+    created: 1717931774378
+    name: Default Jar
+    cookies:
+      - key: JSESSIONID
+        value: 053EB089F00EBE7DA1D4E322A16F5F5C
+        domain: localhost
+        path: /
+        httpOnly: true
+        hostOnly: true
+        creation: 2024-06-09T19:53:55.312Z
+        lastAccessed: 2024-06-09T19:53:55.312Z
+        id: 4e21bc78-67a9-4525-bfca-9a8d00b60b3e
+    _type: cookie_jar
