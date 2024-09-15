@@ -4,16 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb3bbb2-5f97-4403-a174-f6dc515f842e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+    <list default="true" id="cdb3bbb2-5f97-4403-a174-f6dc515f842e" name="Changes" comment="Add modules">
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/config/JwtConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/config/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/controller/AuthorizationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/dto/JwtAuthenticationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/dto/SignInRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/dto/SignUpRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/dto/UserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/entity/Session.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/exception/AuthorizationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/exception/UserWithSuchEmailAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/handler/AuthorizationExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/repository/SessionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/repository/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/service/auth/AuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/service/auth/AuthenticationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/service/jwt/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/service/jwt/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/service/jwt/JwtServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/service/user/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/service/user/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/resources/db/changelog/_session.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/resources/db/changelog/_user.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization-app/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization-app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/authorization-app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/AuthorizationAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/AuthorizationAppApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization-app/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization-app/src/test/java/com/example/authorizationapp/AuthorizationAppApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/order-app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-app/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-app/src/test/java/com/example/orderapp/OrderAppApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,31 +58,236 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/authorization-app">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/order-app">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/authorization-app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;belikoooova&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="374ab06b-92e4-4895-86d2-a65b1fae4ef6" />
+        <option name="url" value="git@github.com:belikoooova/ticket-service.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2hbfPlqhMdGYPmsuX0SUm8so83i" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;hw4-Belikova__Maria-BSE223&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/belikoooova/IdeaProjects/KPO/ticket-service/authorization-app/src/main/java/com/example/authorizationapp/service/user&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/service/user" />
+      <recent name="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/dto" />
+      <recent name="$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/service" />
+      <recent name="$PROJECT_DIR$/order-app" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.authorizationapp.dao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AuthorizationAppApplication">
+    <configuration name="authorization-app [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/authorization-app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="authorization-app [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/authorization-app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ticket-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ticket-service [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="AuthorizationAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ticket-service.authorization-app.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authorizationapp.AuthorizationAppApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderAppApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ticket-service.order-app.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.orderapp.OrderAppApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ticket-service.order-app.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.orderapp.OrderAppApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.authorization-app [build]" />
+        <item itemvalue="Gradle.authorization-app [clean]" />
+        <item itemvalue="Gradle.ticket-service [build]" />
+        <item itemvalue="Gradle.ticket-service [clean]" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,8 +296,89 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1717867678670</updated>
-      <workItem from="1717867679887" duration="25000" />
+      <workItem from="1717867679887" duration="905000" />
+      <workItem from="1717868613677" duration="3673000" />
+      <workItem from="1717872363543" duration="248000" />
+      <workItem from="1717872693296" duration="18516000" />
+      <workItem from="1717934747499" duration="3598000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1717867771382</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717867771382</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add modules">
+      <option name="closed" value="true" />
+      <created>1717868827323</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717868827324</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Add modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add modules" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/service/auth/AuthenticationServiceImpl.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/service/jwt/JwtAuthenticationFilter.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/service/jwt/JwtAuthenticationFilter.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/service/jwt/JwtAuthenticationFilter.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/service/jwt/JwtAuthenticationFilter.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/service/jwt/JwtAuthenticationFilter.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/service/jwt/JwtAuthenticationFilter.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/service/jwt/JwtServiceImpl.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/authorization-app/src/main/java/com/example/authorizationapp/service/jwt/JwtServiceImpl.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
